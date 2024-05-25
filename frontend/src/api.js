@@ -1,10 +1,10 @@
 import axios from 'axios'
 import { ACCESS_TOKEN } from './constants'
 
-const apiUrl = "/choreo-apis/djangoreactproject/backend/v1"
+const Url = "/choreo-apis/djangoreactproject/backend/v1"
 const ola = axios.create(
     {
-        baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : apiUrl,
+        baseURL: import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL : Url,
     }
 );
 
